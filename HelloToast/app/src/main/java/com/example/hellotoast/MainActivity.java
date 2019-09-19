@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     public void showToast(View view){
         Toast toast = Toast.makeText(this, R.string.toast_message,
                 Toast.LENGTH_SHORT);
+        mCount=0;
+        if(mShowCount !=null)
+            mShowCount.setText(Integer.toString(mCount));
         toast.show();
     }
     public void countUp(View view){
